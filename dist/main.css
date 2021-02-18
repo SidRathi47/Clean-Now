@@ -554,7 +554,9 @@ video {
 
 body {
   cursor: default;
-  overflow-x: hidden;
+}
+
+html, body{ overflow-x:hidden !important;
 }
 
 .cta-btn {
@@ -627,7 +629,8 @@ body {
 }
 
 .box-inner {
-  transform: translateZ(20px);
+  transform: translateZ(2
+     0px);
 }
 
 .space-x-1 > :not([hidden]) ~ :not([hidden]) {

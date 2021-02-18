@@ -3,6 +3,8 @@ $('[data-tilt]').tilt({
   maxGlare: .5,
   maxTilt:  5
 })
+
+
 AOS.init({
   // Global settings:
   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -25,6 +27,17 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+
+window.onload = function(){
+	setTimeout(function () {
+		var x = document.querySelectorAll("[]");
+		for (var i = 0; i < x.length; i++) {
+			x[i].style.display = "block";
+			x[i].style.overflowX = "hidden";
+		}
+	}, 500);
+}
 
 // grab everything we need
 const btn = document.querySelector("button.mobile-menu-button");

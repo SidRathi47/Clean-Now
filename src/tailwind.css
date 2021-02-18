@@ -3,8 +3,8 @@
 @tailwind components;
 body {
      cursor: default;
-     overflow-x: hidden;
 }
+html, body{ overflow-x:hidden !important; }
 .cta-btn {
      @apply transition duration-200 ease-in-out inline-block font-semibold text-sm px-4 py-3 leading-none border rounded-full text-white hover:border-teal hover:text-teal bg-teal hover:bg-white;
 }
@@ -20,6 +20,7 @@ body {
      transform-style: preserve-3d;
 }
 .box-inner {
-     transform: translateZ(20px);
+     transform: translateZ(2
+     0px);
 }
 @tailwind utilities;
