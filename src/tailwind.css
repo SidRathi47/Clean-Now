@@ -4,7 +4,10 @@
 body {
      cursor: default;
 }
-html, body{ overflow-x:hidden !important; }
+html, body{ 
+     overflow-x:hidden !important; 
+     scroll-behavior: smooth !important;
+}
 .cta-btn {
      @apply transition duration-200 ease-in-out inline-block font-semibold text-sm px-4 py-3 leading-none border rounded-full text-white hover:border-teal hover:text-teal bg-teal hover:bg-white;
 }
