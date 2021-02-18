@@ -4,20 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tailwindcss build src/tailwind.css -o dist/main.css",
+    "start": "live-server",
+    "prod": "NODE_ENV=production npx tailwindcss build src/tailwind.css -o dist/main.css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SidRathi47/Clean-Now.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Sidharth Rathi",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/SidRathi47/Clean-Now/issues"
   },
   "homepage": "https://github.com/SidRathi47/Clean-Now#readme",
   "dependencies": {
-    "bootstrap": "^5.0.0-beta2"
+    "autoprefixer": "^10.2.4",
+    "live-server": "^1.2.1",
+    "tailwindcss": "^2.0.3",
+    "win-node-env": "^0.4.0"
   }
 }
