@@ -1,49 +1,45 @@
 $('[data-tilt]').tilt({
   glare: true,
   maxGlare: .5,
-  maxTilt:  5
+  maxTilt: 5
 })
 
 
 AOS.init({
-  // Global settings:
-  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-  initClassName: 'aos-init', // class applied after initialization
-  animatedClassName: 'aos-animate', // class applied on animation
-  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-  
 
-  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  offset: 120, // offset (in px) from the original trigger point
-  delay: 0, // values from 0 to 3000, with step 50ms
-  duration: 400, // values from 0 to 3000, with step 50ms
-  easing: 'ease', // default easing for AOS animations
+  delay: 150, // values from 0 to 3000, with step 50ms
+  duration: 800, // values from 0 to 3000, with step 50ms
   once: true, // whether animation should happen only once - while scrolling down
-  mirror: false, // whether elements should animate out while scrolling past them
-  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
 });
 
 
-window.onload = function(){
-	setTimeout(function () {
-		var x = document.querySelectorAll("[]");
-		for (var i = 0; i < x.length; i++) {
-			x[i].style.display = "block";
-			x[i].style.overflowX = "hidden";
-		}
-	}, 500);
-}
+// window.onload = function(){
+// 	setTimeout(function () {
+// 		var x = document.querySelectorAll("[]");
+// 		for (var i = 0; i < x.length; i++) {
+// 			x[i].style.display = "block";
+// 			x[i].style.overflowX = "hidden";
+// 		}
+// 	}, 500);
+// }
 
 // grab everything we need
-const btn = document.querySelector("button.mobile-menu-button");
-const menu = document.querySelector(".mobile-menu");
+const close = document.querySelector("#nav-close");
+const open = document.querySelector("#nav-open");
+const menu = document.querySelector("#mobile-nav");
+const menuitems = document.querySelectorAll("[role='menuitem']");
 
-// add event listeners
-btn.addEventListener("click", () => {
-  menu.classList.toggle("hidden");
-});
+function closeMenu() {
+  menu.classList.add("hidden");
+}
+
+function openMenu() {
+  menu.classList.remove("hidden");
+}
+
+close.addEventListener("click", closeMenu);
+open.addEventListener("click", openMenu);
+
+for (i = 0; i < menuitems.length; i++) {
+  menuitems[i].addEventListener("click", closeMenu);
+}

@@ -4,26 +4,18 @@
 body {
      cursor: default;
 }
-html, body{ 
+html, body { 
      overflow-x:hidden !important; 
      scroll-behavior: smooth !important;
 }
 .cta-btn {
      @apply transition duration-200 ease-in-out inline-block font-semibold text-sm px-4 py-3 leading-none border rounded-full text-white hover:border-teal hover:text-teal bg-teal hover:bg-white;
 }
+.transition-smooth {
+     @apply transition duration-200 ease-in-out;
+}
 .section-heading {
      @apply text-center text-gray-800 font-bold text-3xl lg:text-4xl my-2;
 }
-.bg-cta-section {
-     background-image: url('../Assets/slider.png');
-     background-size: cover;
-     background-position: center;
-}
-.box-tilt {
-     transform-style: preserve-3d;
-}
-.box-inner {
-     transform: translateZ(2
-     0px);
-}
+
 @tailwind utilities;

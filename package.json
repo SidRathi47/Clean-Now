@@ -2,11 +2,11 @@
   "name": "Clean-Now",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.html",
   "scripts": {
     "build": "tailwindcss build src/tailwind.css -o dist/main.css",
     "start": "live-server",
-    "prod": "NODE_ENV=production npx tailwindcss build src/tailwind.css -o dist/main.css"
+    "prod": "npx tailwindcss build src/tailwind.css -o dist/main.css"
   },
   "repository": {
     "type": "git",
@@ -21,8 +21,9 @@
   "homepage": "https://github.com/SidRathi47/Clean-Now#readme",
   "dependencies": {
     "autoprefixer": "^10.2.4",
-    "live-server": "^1.2.1",
-    "tailwindcss": "^2.0.3",
-    "win-node-env": "^0.4.0"
+    "tailwindcss": "^2.0.3"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
   }
 }

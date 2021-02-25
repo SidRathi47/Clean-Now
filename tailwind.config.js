@@ -1,8 +1,10 @@
 module.exports = {
-  purge: [
-    'dist/**/*.html',
-    'dist/JS/*.js'    
-  ],
+  purge: {
+    enabled: true,
+    content: ['dist/**/*.html',
+    'dist/JS/*.js']
+  },
+  
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
