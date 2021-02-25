@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="164" height="164" viewBox="0 0 164 164">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #38ada9;
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 70px;
+        font-family: Poppins-Black, Poppins;
+        font-weight: 800;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_26" data-name="Group 26" transform="translate(-300 -8984)">
+    <g id="Ellipse_7" data-name="Ellipse 7" class="cls-1" transform="translate(300 8984)">
+      <circle class="cls-3" cx="82" cy="82" r="82"/>
+      <circle class="cls-4" cx="82" cy="82" r="81.5"/>
+    </g>
+    <text id="C_N" data-name="C N" class="cls-2" transform="translate(380 9091)"><tspan x="-59.57" y="0">C N</tspan></text>
+  </g>
+</svg>
