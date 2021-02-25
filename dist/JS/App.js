@@ -13,16 +13,6 @@ AOS.init({
 });
 
 
-// window.onload = function(){
-// 	setTimeout(function () {
-// 		var x = document.querySelectorAll("[]");
-// 		for (var i = 0; i < x.length; i++) {
-// 			x[i].style.display = "block";
-// 			x[i].style.overflowX = "hidden";
-// 		}
-// 	}, 500);
-// }
-
 // grab everything we need
 const close = document.querySelector("#nav-close");
 const open = document.querySelector("#nav-open");
